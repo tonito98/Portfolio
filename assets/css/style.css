@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #39a6b2;
+}
+
+/*apply styles to <header> addesd 35px to padding */
+header {
+    padding: 20px 35px;
+    background-color: #39a6b2;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+header h1{ 
+    font-weight: bold;
+    font-size: 36px;
+    color: #fce138;
+    margin: 0;
+}
+
+header a { 
+    text-decoration: none;
+    color: #fce138
+}
+
+header nav {
+
+    margin: 7px 0;
+}
+
+header nav ul  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    margin: 0 30px;
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+
+footer {
+    background: #fce138;  
+    width: 100%; 
+    padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer h2 {
+    
+    color: #024e76;
+    font-size: 30px;
+    margin: 0;
+}
+
+footer div {
+    
+    line-height: 1.5;
+    text-align: right;
+}
+
+footer a {
+    color: #024e76;
+}
+
+section {
+    padding: 60px;
+}
+ /* Hero Style Start*/
+ .hero {
+     background-image: url("../images/hero-bg.jpg");
+     background-size: cover;
+     background-position: center;
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+ }
+ /* Hero Style End*/
+
+ 
+ 
+ 
+ /*about me section*/
+
+ .about-me {
+     background-color: black;
+     flex: 0 0 15%;
+ }
+
+ .about-me-paragraph {
+     background-color: #ffebc6;
+     flex: 0 0 75%;
+    }
+  
+ 
+ 
+
+.section-title {
+    font-size: 55px;
+    color: #024e76;
+    border-bottom: 3px solid;
+}
+
+.primary-border {
+    border-color: #fce138;
+}
+
+.secondary-border {
+    border-color: #39a6b2;
+}
+
+
+
+.flex-row { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: violet;
+    justify-content: space-between;
+}
+
+
+
+.secondary-border {
+    border-color: teal;
+}
+
+/* REACH OUT STYLES END */
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header h1 a {
+      /* this will be applied on any screen smaller than 980px */
+      font-size: 60px;
+    }
+  }
+  
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
+    header h1 {
+      /* this will be applied on any screen between 768px and 575px */
+      font-size: 80px;
+    }
+  }
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+    header h1 {
+      /* this will be applied on any screen smaller than 575px */
+      font-size: 100px;
+    }
+  }
